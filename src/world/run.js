@@ -47,7 +47,7 @@ function runDefs(world_def, defs, listeners) {
         var worldCar = car.car;
         world.DestroyBody(worldCar.chassis);
 
-        for (var w = 0; w < worldCar.wheels.length; w++) {
+        for (var w in worldCar.wheels) {
           world.DestroyBody(worldCar.wheels[w]);
         }
 

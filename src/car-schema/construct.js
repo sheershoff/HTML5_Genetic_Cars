@@ -64,5 +64,13 @@ function generateSchema(values){
       limit: values.wheelCount,
       factor: 1,
     },
+    wheel_exists: {
+      type: "float",
+      length: 8,
+      limit: values.wheelCount,
+      min: -1,
+      range: 2,
+      factor: 1,
+    },
   };
 }

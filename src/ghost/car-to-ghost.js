@@ -6,7 +6,7 @@ module.exports = function(car) {
     pos: {x: car.chassis.GetPosition().x, y: car.chassis.GetPosition().y}
   };
 
-  for (var i = 0; i < car.wheels.length; i++) {
+  for (var i in car.wheels) {
     out.wheels[i] = ghost_get_wheel(car.wheels[i]);
   }
 

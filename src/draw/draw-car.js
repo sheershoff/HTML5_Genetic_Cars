@@ -24,7 +24,7 @@ module.exports = function(car_constants, myCar, camera, ctx){
 
   var wheels = myCar.car.car.wheels;
 
-  for (var i = 0; i < wheels.length; i++) {
+  for (var i in wheels) {
     var b = wheels[i];
     for (var f = b.GetFixtureList(); f; f = f.m_next) {
       var s = f.GetShape();
